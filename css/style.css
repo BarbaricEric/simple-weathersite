@@ -35,9 +35,9 @@ body {
  cursor: pointer;
 }
 
-.degree-section {
+span {
  margin: 10px;
- font-size: 30px;
+ font-size: 25px;
 }
 
 .degree-section h2 {
