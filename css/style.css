@@ -37,16 +37,14 @@ body {
 
 span {
  margin: 10px;
- font-size: 25px;
-}
-
-.degree-section h2 {
  font-size: 40px;
 }
 
+.degree-section h2,
+.temperature-description {
+ font-size: 40px;
+}
 
-
-
-
-
-
+.temperature-description-bottom {
+ font-size: 25px;
+}
