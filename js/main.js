@@ -17,6 +17,13 @@ window.addEventListener('load', ()=> {
    const proxyServer = 
    const api = 
     
+function noLocation() {
+if(navigator.geolocation == undefined || navigator.geolocation == null){
+ locationTimezone.textContent = "Please allow for the site to access your location to determine your specific location weather."
+} else {
+ console.log("Hello World");
+}
+}   
     
  function setIcons(icon, iconID){
  const skycons = new Skycons({color: "white"});
