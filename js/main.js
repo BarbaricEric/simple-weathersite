@@ -16,6 +16,11 @@ window.addEventListener('load', ()=> {
 
    const proxyServer = 
    const api = 
+
+   //Formula for Celsius
+   let celsius = (temperature - 32) * (5 / 9);
+   //Set Icon
+   setIcons(icon, document.querySelector(".icon"));
     
 function noLocation() {
 if(navigator.geolocation == undefined || navigator.geolocation == null){
