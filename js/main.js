@@ -21,7 +21,18 @@ window.addEventListener('load', ()=> {
    let celsius = (temperature - 32) * (5 / 9);
    //Set Icon
    setIcons(icon, document.querySelector(".icon"));
-    
+
+   //Change temperature to Celsius or Farenheit
+   temperatureSection.addEventListener("click", () => {
+   if (temperatureSpan.textContent === "F") {
+    temperatureSpan.textContent = "C";
+    temperatureDegree.textContent = Math.floor(celsius);
+   } else {
+    temperatureSpan.textContent = "F";
+    temperatureDegree.textContent = temperature;
+   }
+  })
+   
 function noLocation() {
 if(navigator.geolocation == undefined || navigator.geolocation == null){
  locationTimezone.textContent = "Please allow for the site to access your location to determine your specific location weather."
