@@ -17,12 +17,24 @@ window.addEventListener('load', ()=> {
    const proxyServer = 
    const api = 
 
+   fetch(api)
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const { temperature, summary, icon } = data.currently;
+   //Set DOM element from API
+   temperatureDegree.textContent = temperature;
+   temperatureDescription.textContent = summary;
+   locationTimezone.textContent = data.timezone;
+   
    //Formula for Celsius
    let celsius = (temperature - 32) * (5 / 9);
    //Set Icon
    setIcons(icon, document.querySelector(".icon"));
 
-   //Change temperature to Celsius or Farenheit
+   //Change temperature to Celsius/Farenheit
    temperatureSection.addEventListener("click", () => {
    if (temperatureSpan.textContent === "F") {
     temperatureSpan.textContent = "C";
@@ -32,6 +44,12 @@ window.addEventListener('load', ()=> {
     temperatureDegree.textContent = temperature;
    }
   })
+
+ });
+});
+} else {
+ noLocation();
+}
    
 function noLocation() {
 if(navigator.geolocation == undefined || navigator.geolocation == null){
