@@ -15,7 +15,7 @@ window.addEventListener('load', ()=> {
   lat = position.coords.latitude;
 
    const proxyServer = 
-   const api = 
+   const api = `${proxyServer}https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/${lat},${long}`;
 
    fetch(api)
   .then(response => {
