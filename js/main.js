@@ -1,3 +1,14 @@
+const BROSWERSUPPORT = document.querySelector('.banner-support');
+
+//Warning Message: Supported Browser
+function browseView() {
+    BROSWERSUPPORT.style.display = 'none';
+}
+
+//Browser Support Banner Time Interval
+setTimeout(() => {browseView();}, 5.0*1000);
+
+
 // Define Global Terms to use
 window.addEventListener('load', ()=> {
  let long;
