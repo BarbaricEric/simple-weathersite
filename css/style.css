@@ -140,7 +140,7 @@ span {
  }
 }
 
-@media (max-device-width: 320px) {
+@media (max-device-width: 420px) {
  .banner-logo {
     display: none;
  }
