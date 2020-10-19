@@ -4,10 +4,10 @@ const mediaQuery = window.matchMedia('(min-device-width: 1200px)')
 
 //Mobile Support
 if (mediaQuery.matches) {
-  document.querySelector('.icon');textContent = " ";
-  document.querySelector('.temperature-degree');textContent = " ";
-  document.querySelector('temperature-description-bottom');textContent = " ";
-  document.querySelector('.location-timezone');textContent = "Mobile site isn't supported yet. ";  
+  document.querySelector('.icon').textContent = " ";
+  document.querySelector('.temperature-degree').textContent = " ";
+  document.querySelector('temperature-description-bottom').textContent = " ";
+  document.querySelector('.location-timezone').textContent = "Mobile site isn't supported yet.";  
 }
 
 //Warning Message: Supported Browser
