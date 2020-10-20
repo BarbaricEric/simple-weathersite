@@ -6,8 +6,8 @@ const mediaQuery = window.matchMedia('(max-width: 1200px)')
 if (mediaQuery.matches) {
   document.querySelector('.icon').textContent = " ";
   document.querySelector('.temperature-degree').textContent = " ";
-  document.querySelector('.temperature-description-bottom').textContent = " ";
-  document.querySelector('.location-timezone').textContent = "Mobile site isn't supported yet.";  
+  document.querySelector('.temperature-description-bottom').textContent = "Mobile site isn't supported yet. ";
+  document.querySelector('.location-timezone').textContent = " ";  
 }
 
 //Warning Message: Supported Browser
